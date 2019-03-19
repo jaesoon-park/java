@@ -3,27 +3,21 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	int score = (int)(Math.random()*20)+81;
-	System.out.println("점수 : " +  score);
+	int sum = 0;
+	int num = 0;
 	
-	String grade = null;
+	int n;
 	
-	if(score >= 90) {
-		if(score >= 95){ 
-			grade = "A+";
-		}else {
-			grade ="A";
+	while(sum < 100) {
+		sum++;
+		n = sum%2;
+		if(n!=0) {
+			num = num + sum;
 		}
-	}else {
-			if(score >=85) {
-				grade = "B+";
-			}else {
-				grade = "B";
-			}
-		}
-	System.out.println("학점: " + grade);
-		
+	}
+	
+	System.out.println(num);
 	}
 }
-
+	
 
